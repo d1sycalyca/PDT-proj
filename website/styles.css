@@ -693,7 +693,12 @@ img {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 528px) {
+
+  .top-bar__address {
+    display: none;
+
+  }
   .hero h1 {
     font-size: 2rem;
   }
@@ -705,4 +710,5 @@ img {
   .stats .grid {
     grid-template-columns: 1fr;
   }
+
 }
