@@ -795,9 +795,8 @@ button:focus-visible {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-
-  .stats .grid {
-    grid-template-columns: 1fr;
+  .stat__number{
+    font-size: 1.6rem;
   }
 
 }
