@@ -787,14 +787,16 @@ button:focus-visible {
   .hero__panel h3 { margin: -24px -24px 24px; padding: 20px 24px; }
   .form-card { padding: 24px; }
   .hero__actions .btn { width: 100%; }
+  .site-footer { padding: 40px 0 20px; }
+  .footer-grid { gap: 20px; margin-bottom: 24px; }
+  .site-footer h4 { margin-bottom: 10px; }
+  .site-footer li { margin-bottom: 6px; }
+  .footer-bottom { padding-top: 16px; }
 
   .hero h1 {
     font-size: 2rem;
   }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
+  
   .stat__number{
     font-size: 1.6rem;
   }
