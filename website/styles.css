@@ -775,6 +775,45 @@ background-color: var(--color-header-bg);
   color: var(--color-text-inverse);
 }
 
+/* About page: structure ready for approved copy and photography. */
+.about-introduction {
+  align-items: center;
+}
+
+.about-photo-placeholder {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: 12px;
+  color: var(--color-text-muted);
+}
+
+.about-photo-placeholder p {
+  font-size: 1.25rem;
+  color: var(--color-heading);
+}
+
+.about-mission h2 {
+  color: var(--color-text-inverse);
+}
+
+.about-mission__statement {
+  max-width: 800px;
+  margin-top: 24px;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--color-text-inverse-muted);
+}
+
+.about-approach {
+  border-top: 1px solid var(--color-border);
+}
+
 /* Keyboard focus stays visible on every background. */
 a:focus-visible,
 button:focus-visible {

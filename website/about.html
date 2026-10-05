@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Meadowview Care Facility</title>
-    <meta name="description" content="Learn about Meadowview Care Facility's mission, values, and dedicated care team.">
+    <title>About Reflex | Reflex Living Solutions</title>
+    <meta name="description" content="Learn about Reflex, our mission, values, and approach.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,13 +24,13 @@
 
     <header class="site-header">
         <div class="container">
-            <div class="brand">
-                <div class="brand__mark">M</div>
+            <a class="brand" href="index.html" aria-label="Reflex Living Solutions home">
+                <img class="brand__logo" src="images/logo_reflex.svg" alt="" width="64" height="64">
                 <div class="brand__name">
-                    Meadowview
-                    <span>Care Facility</span>
+                    Reflex
+                    <span>Living Solutions</span>
                 </div>
-            </div>
+            </a>
             <a class="header-contact" href="tel:+15551234567">
                 (555) 123-4567
                 <span>Speak to our care team</span>
@@ -39,124 +39,85 @@
         <nav class="main-nav" aria-label="Primary">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active" aria-current="page">About</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">About Reflex</a></li>
                     <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
                 </ul>
         </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="about-page">
+        <!-- Layout draft: Tomiwa to replace the marked copy with approved client wording. -->
         <section class="page-hero">
             <div class="container">
-                <h1>About Meadowview</h1>
-                <p>For over two decades, we've been a trusted home for residents and a trusted partner for their families.</p>
+                <span class="eyebrow">Get to know us</span>
+                <h1>About Reflex</h1>
+                <p>Discover who we are, what guides us, and how we approach our work.</p>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" aria-labelledby="who-we-are">
+            <div class="container grid grid-2 about-introduction">
+                <div>
+                    <span class="eyebrow">Our organisation</span>
+                    <h2 id="who-we-are">Who We Are</h2>
+                    <p class="about-draft">Organisation introduction — approved copy to follow.</p>
+                    <p class="about-draft">Explain how Living Solutions and Workforce Solutions fit together.</p>
+                </div>
+                <div class="about-photo-placeholder">
+                    <span class="eyebrow">Photography space</span>
+                    <p>Reflex property or team photo</p>
+                    <span>Approved image to follow</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt about-mission" aria-labelledby="our-mission">
             <div class="container">
+                <span class="eyebrow">Our purpose</span>
+                <h2 id="our-mission">Our Mission</h2>
+                <p class="about-mission__statement">Client-approved mission statement to follow.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="our-values">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">What guides us</span>
+                    <h2 id="our-values">Our Values</h2>
+                    <p class="about-draft">Use the client's values here; adjust the number of cards to match.</p>
+                </div>
                 <div class="grid grid-2">
-                    <div>
-                        <span class="eyebrow">Our Story</span>
-                        <h2>A Home Built on Trust and Compassion</h2>
-                        <p>Meadowview Care Facility was founded with a simple belief: every resident deserves to be treated with the same care, patience, and respect as family. What began as a single residential home has grown into a full-service care community, while never losing sight of that founding principle.</p>
-                        <p>Today, our team of nurses, carers, and support staff works together to provide safe, personalised care for residents at every stage of their journey, from short-term respite stays to long-term residential and nursing care.</p>
+                    <div class="card">
+                        <h3>Value one — to be confirmed</h3>
+                        <p>Approved value description to follow.</p>
                     </div>
                     <div class="card">
-                        <h3>At a Glance</h3>
-                        <ul class="value-list">
-                            <li>
-                                <div class="value-list__mark">20+</div>
-                                <div>Years providing residential and nursing care</div>
-                            </li>
-                            <li>
-                                <div class="value-list__mark">24/7</div>
-                                <div>On-site nursing and care staff</div>
-                            </li>
-                            <li>
-                                <div class="value-list__mark">85</div>
-                                <div>Residents currently in our care</div>
-                            </li>
-                        </ul>
+                        <h3>Value two — to be confirmed</h3>
+                        <p>Approved value description to follow.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Value three — to be confirmed</h3>
+                        <p>Approved value description to follow.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Value four — to be confirmed</h3>
+                        <p>Approved value description to follow.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="eyebrow">Our Values</span>
-                    <h2>What Guides Everything We Do</h2>
+        <section class="section about-approach" aria-labelledby="our-approach">
+            <div class="container grid grid-2">
+                <div>
+                    <span class="eyebrow">Why Reflex</span>
+                    <h2 id="our-approach">Our Approach</h2>
                 </div>
-                <ul class="value-list">
-                    <li>
-                        <div class="value-list__mark">1</div>
-                        <div>
-                            <h3>Dignity First</h3>
-                            <p>We treat every resident as an individual, respecting their history, preferences, and independence.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="value-list__mark">2</div>
-                        <div>
-                            <h3>Compassionate Expertise</h3>
-                            <p>Our clinical skill is matched by genuine warmth, so residents receive care that feels personal, not clinical.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="value-list__mark">3</div>
-                        <div>
-                            <h3>Open Communication</h3>
-                            <p>Families are kept informed and involved, because care decisions are always made together.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="value-list__mark">4</div>
-                        <div>
-                            <h3>Safety &amp; Accountability</h3>
-                            <p>We hold ourselves to rigorous health, safety, and training standards, every single day.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="eyebrow">Our Team</span>
-                    <h2>Meet the People Behind Meadowview</h2>
-                    <p>A dedicated leadership team overseeing daily care, clinical standards, and resident wellbeing.</p>
+                <div>
+                    <p class="about-draft">Explain how Reflex puts its mission and values into practice, using approved examples.</p>
+                    <p class="about-draft">Show what this means for the people and organisations Reflex works with.</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Reflex</a>
                 </div>
-                <div class="grid grid-3">
-                    <div class="card team-card">
-                        <div class="team-card__photo">EM</div>
-                        <h3>Elaine Morris</h3>
-                        <div class="team-card__role">Facility Director</div>
-                        <p>Over 18 years in aged care administration, leading Meadowview since 2015.</p>
-                    </div>
-                    <div class="card team-card">
-                        <div class="team-card__photo">RP</div>
-                        <h3>Raymond Patel</h3>
-                        <div class="team-card__role">Head of Nursing</div>
-                        <p>Registered nurse overseeing clinical care plans and medical coordination.</p>
-                    </div>
-                    <div class="card team-card">
-                        <div class="team-card__photo">SC</div>
-                        <h3>Sandra Cole</h3>
-                        <div class="team-card__role">Family Liaison Coordinator</div>
-                        <p>The first point of contact for families, tours, and admissions enquiries.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-banner">
-            <div class="container">
-                <h2>Come See Meadowview for Yourself</h2>
-                <p>We welcome you to tour our facility and meet the team who will care for your loved one.</p>
-                <a href="contact.html" class="btn btn-accent">Book a Tour</a>
             </div>
         </section>
     </main>
@@ -172,7 +133,7 @@
                     <h4>Navigate</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About Reflex</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
