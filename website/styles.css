@@ -190,35 +190,30 @@ display: flex;
   gap: 12px;
 }
 
-.brand__mark {
+.brand__logo {
   width: 44px;
   height: 44px;
-  background-color: var(--color-accent);
-  color: var(--color-heading);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: bold;
-  font-size: 1.1rem;
+  display: block;
   flex-shrink: 0;
 }
 
 .brand__name {
-font-family: var(--font-heading);
-  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.3em;
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
   color: var(--color-text-inverse);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
 }
 
 .brand__name span {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: normal;
-  color: var(--color-text-inverse-muted);
-  letter-spacing: 0.04em;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
 }
 
 .header-contact {
@@ -514,8 +509,8 @@ background-color: var(--color-surface);
 
 /* ---------- Stats ---------- */
 .stats {
-  background-color: var(--color-primary);
-  color: var(--color-text-inverse);
+  background-color: var(--color-primary-light);
+  color: var(--color-heading);
   padding: 40px 0;
 }
 
@@ -532,7 +527,7 @@ background-color: var(--color-surface);
 }
 
 .stat__label {
-color: var(--color-text-inverse);
+color: var(--color-heading);
   font-size: 0.9rem;
 }
 
@@ -773,45 +768,6 @@ background-color: var(--color-header-bg);
   text-align: center;
   font-size: 0.82rem;
   color: var(--color-text-inverse);
-}
-
-/* About page: structure ready for approved copy and photography. */
-.about-introduction {
-  align-items: center;
-}
-
-.about-photo-placeholder {
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 32px;
-  text-align: center;
-  background: var(--color-surface);
-  border: 1px dashed var(--color-border);
-  border-radius: 12px;
-  color: var(--color-text-muted);
-}
-
-.about-photo-placeholder p {
-  font-size: 1.25rem;
-  color: var(--color-heading);
-}
-
-.about-mission h2 {
-  color: var(--color-text-inverse);
-}
-
-.about-mission__statement {
-  max-width: 800px;
-  margin-top: 24px;
-  font-size: clamp(1.3rem, 3vw, 2rem);
-  color: var(--color-text-inverse-muted);
-}
-
-.about-approach {
-  border-top: 1px solid var(--color-border);
 }
 
 /* Keyboard focus stays visible on every background. */
