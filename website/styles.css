@@ -206,19 +206,22 @@ display: flex;
 }
 
 .brand__name {
-font-family: var(--font-heading);
-  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.3em;
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
   color: var(--color-text-inverse);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
 }
 
 .brand__name span {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: normal;
-  color: var(--color-text-inverse-muted);
-  letter-spacing: 0.04em;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
 }
 
 .header-contact {
@@ -514,8 +517,8 @@ background-color: var(--color-surface);
 
 /* ---------- Stats ---------- */
 .stats {
-  background-color: var(--color-primary);
-  color: var(--color-text-inverse);
+  background-color: var(--color-primary-light);
+  color: var(--color-heading);
   padding: 40px 0;
 }
 
@@ -532,7 +535,7 @@ background-color: var(--color-surface);
 }
 
 .stat__label {
-color: var(--color-text-inverse);
+color: var(--color-heading);
   font-size: 0.9rem;
 }
 
