@@ -497,7 +497,8 @@ background-color: var(--color-surface);
   font-weight: bold;
 }
 
-.card__icon svg {
+.card__icon svg,
+.info-card__icon svg {
   width: 24px;
   height: 24px;
   display: block;
