@@ -574,6 +574,16 @@ color: var(--color-heading);
 }
 
 /* ---------- About page specifics ---------- */
+.glance-card {
+  align-self: start;
+}
+
+.glance-card .value-list li {
+  align-items: center;
+  min-height: 76px;
+  padding: 20px 0;
+}
+
 .value-list {
   list-style: none;
   margin: 0;
