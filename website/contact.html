@@ -6,24 +6,13 @@
     <title>Contact Us | Reflex Living Solutions</title>
     <meta name="description" content="Contact Reflex Living Solutions to discuss supported living properties, housing requirements or care provider partnerships.">
     <link rel="icon" type="image/svg+xml" sizes="any" href="images/logo_reflex.svg?v=3">
-    <link rel="stylesheet" href="styles.css?v=20261007-icons">
+    <link rel="stylesheet" href="styles.css?v=20261007-homes">
+    <script src="navigation.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar__contact">
-                <a href="tel:***INSERT PHONE NUMBER***">Phone: ***INSERT PHONE NUMBER***</a>
-                <span>Supported Housing Enquiries</span>
-            </div>
-            <div class="top-bar__address">
-                ***INSERT ADDRESS***
-            </div>
-        </div>
-    </div>
-
-    <header class="site-header">
+<header class="site-header">
         <div class="container">
             <div class="brand">
                 <img class="brand__logo" src="images/logo_reflex.svg" alt="" width="44" height="44">
@@ -38,11 +27,13 @@
             </a>
         </div>
         <nav class="main-nav" aria-label="Primary">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active nav-cta" aria-current="page">Contact Us</a></li>
-                </ul>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links" hidden>Menu</button>
+            <ul id="primary-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Reflex</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -149,42 +140,22 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer footer-compact">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>Reflex Living Solutions</h4>
-                    <p>Providing properties for supported living, with independence at the heart of our approach.</p>
-                </div>
-                <div>
-                    <h4>Navigate</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Supported Living Properties</li>
-                        <li>Housing Enquiries</li>
-                        <li>Property Requirements</li>
-                        <li>Care Provider Partnerships</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>***INSERT ADDRESS***</li>
-                        <li><a href="tel:***INSERT PHONE NUMBER***">***INSERT PHONE NUMBER***</a></li>
-                        <li><a href="mailto:***INSERT EMAIL ADDRESS***">***INSERT EMAIL ADDRESS***</a></li>
-                    </ul>
-                </div>
+            <div class="footer-summary">
+                <p><strong>Reflex Living Solutions</strong><br>Properties for supported living.</p>
+                <a href="contact.html" class="btn btn-accent">Contact Us</a>
             </div>
-            <div class="footer-bottom">
-                &copy; 2026 Reflex Living Solutions. All rights reserved.
-            </div>
+            <nav aria-label="Footer">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Reflex</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="our-homes.html">Our Homes</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">&copy; 2026 Reflex Living Solutions. All rights reserved.</div>
         </div>
     </footer>
 </body>

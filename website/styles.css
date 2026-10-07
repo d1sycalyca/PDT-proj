@@ -267,6 +267,36 @@ display: inline-block;
 }
 
 /* ---------- Buttons ---------- */
+.main-nav [hidden] {
+  display: none;
+}
+
+.nav-toggle {
+  margin: 12px 20px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  background: transparent;
+  border: 1px solid var(--color-text-inverse-muted);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .main-nav #primary-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 20px 12px;
+  }
+
+  .main-nav #primary-links a {
+    display: block;
+    padding: 14px 16px;
+  }
+}
+
 .btn {
 display: inline-flex;
   align-items: center;
@@ -868,4 +898,46 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
+}
+
+/* Shared compact shell: one header row, with an expandable mobile menu. */
+.site-header .header-layout {
+  flex-wrap: nowrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: left;
+}
+.header-layout .brand { text-decoration: none; }
+.header-layout .main-nav { border-top: 0; }
+.header-layout .main-nav ul { gap: 4px; padding: 0; }
+.header-layout .main-nav a { padding: 14px 12px; font-size: 0.9rem; }
+.homes-notice {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-surface);
+  text-align: center;
+}
+.footer-compact { padding: 28px 0 20px; }
+.footer-summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.footer-summary p { margin: 0; }
+.footer-compact .footer-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 20px 0; }
+.footer-compact .footer-links li { margin: 0; }
+.footer-compact .footer-links a { display: inline-block; padding: 8px 0; }
+.footer-compact .footer-bottom { padding-top: 16px; text-align: left; }
+@media (max-width: 1100px) {
+  .site-header .header-layout { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; }
+  .header-layout .main-nav { display: contents; }
+  .header-layout .nav-toggle { margin: 0; padding: 10px 12px; }
+  .header-layout #primary-links { grid-column: 1 / -1; flex-direction: column; align-items: stretch; gap: 0; padding: 0; }
+  .header-layout #primary-links a { display: block; padding: 12px; }
+  .header-layout .brand__name { flex-direction: column; align-items: flex-start; gap: 0; font-size: 1.15rem; white-space: normal; }
+  .header-layout .brand__name span { font-size: 0.75rem; }
+}
+@media (max-width: 528px) {
+  .footer-summary { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .footer-compact .footer-links { gap: 4px 20px; }
+  .homes-notice { padding: 24px; }
 }

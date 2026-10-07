@@ -6,24 +6,13 @@
     <title>About Us | Reflex Living Solutions</title>
     <meta name="description" content="Learn about Reflex Living Solutions and our approach to providing supported living properties in collaboration with care and support providers.">
     <link rel="icon" type="image/svg+xml" sizes="any" href="images/logo_reflex.svg?v=3">
-    <link rel="stylesheet" href="styles.css?v=20261007-icons">
+    <link rel="stylesheet" href="styles.css?v=20261007-homes">
+    <script src="navigation.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar__contact">
-                <a href="tel:***INSERT PHONE NUMBER***">Phone: ***INSERT PHONE NUMBER***</a>
-                <span>Supported Housing Enquiries</span>
-            </div>
-            <div class="top-bar__address">
-                ***INSERT ADDRESS***
-            </div>
-        </div>
-    </div>
-
-    <header class="site-header">
+<header class="site-header">
         <div class="container">
             <div class="brand">
                 <img class="brand__logo" src="images/logo_reflex.svg" alt="" width="44" height="44">
@@ -38,11 +27,13 @@
             </a>
         </div>
         <nav class="main-nav" aria-label="Primary">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active" aria-current="page">About</a></li>
-                    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-                </ul>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links" hidden>Menu</button>
+            <ul id="primary-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About Reflex</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -54,41 +45,32 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" aria-labelledby="who-we-are">
             <div class="container">
-                <div class="grid grid-2">
-                    <div>
-                        <span class="eyebrow">Our Purpose</span>
-                        <h2>Good Housing Is the Foundation</h2>
-                        <p>At Reflex Living Solutions, we believe that people who need support should have a place they can call their own. Our focus is on providing supported living properties that respect individual needs, preferences and independence.</p>
-                        <p>We provide the accommodation and work alongside care and support providers. Those providers deliver personal care and day-to-day support; Reflex focuses on the property. Keeping these roles clear helps tenants, families and partners understand who to contact.</p>
-                    </div>
-                    <div class="card glance-card">
-                        <h3>At a Glance</h3>
-                        <ul class="value-list">
-                            <li>
-                                <div class="value-list__mark">1</div>
-                                <div>Properties for supported living</div>
-                            </li>
-                            <li>
-                                <div class="value-list__mark">2</div>
-                                <div>Care delivered by separate providers</div>
-                            </li>
-                            <li>
-                                <div class="value-list__mark">3</div>
-                                <div>Independence, choice and collaboration</div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="section-header">
+                    <span class="eyebrow">Our organisation</span>
+                    <h2 id="who-we-are">Who We Are</h2>
+                    <p>We provide the accommodation and work alongside care and support providers. Those providers deliver personal care and day-to-day support; Reflex focuses on the property.</p>
+                    <a href="what-we-do.html">Explore our housing offer</a>
+                </div>
+            </div>
+        </section>
+        <section class="section section-alt" aria-labelledby="our-mission">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Our purpose</span>
+                    <h2 id="our-mission">Our Mission</h2>
+                    <!-- Existing purpose copy reused here; Tomiwa to confirm final mission wording. -->
+                    <p>At Reflex Living Solutions, we believe that people who need support should have a place they can call their own. Our focus is on providing supported living properties that respect individual needs, preferences and independence.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt">
+        <section class="section" aria-labelledby="our-values">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">Our Values</span>
-                    <h2>What Guides Everything We Do</h2>
+                    <span class="eyebrow">What guides us</span>
+                    <h2 id="our-values">Our Values</h2>
                 </div>
                 <ul class="value-list">
                     <li>
@@ -123,6 +105,25 @@
             </div>
         </section>
 
+        <section class="section section-alt" aria-labelledby="our-approach">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Why Reflex</span>
+                    <h2 id="our-approach">Our Approach</h2>
+                </div>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Transparent Communication</h3>
+                        <p>We aim to make housing discussions straightforward, involving tenants, families and care providers where appropriate.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Independence &amp; Choice</h3>
+                        <p>We believe people should have a say in where and how they live, with housing that respects their preferences and independence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section">
             <div class="container">
                 <div class="section-header">
@@ -150,42 +151,22 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer footer-compact">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>Reflex Living Solutions</h4>
-                    <p>Providing properties for supported living, with independence at the heart of our approach.</p>
-                </div>
-                <div>
-                    <h4>Navigate</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Supported Living Properties</li>
-                        <li>Housing Enquiries</li>
-                        <li>Property Requirements</li>
-                        <li>Care Provider Partnerships</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>***INSERT ADDRESS***</li>
-                        <li><a href="tel:***INSERT PHONE NUMBER***">***INSERT PHONE NUMBER***</a></li>
-                        <li><a href="mailto:***INSERT EMAIL ADDRESS***">***INSERT EMAIL ADDRESS***</a></li>
-                    </ul>
-                </div>
+            <div class="footer-summary">
+                <p><strong>Reflex Living Solutions</strong><br>Properties for supported living.</p>
+                <a href="contact.html" class="btn btn-accent">Contact Us</a>
             </div>
-            <div class="footer-bottom">
-                &copy; 2026 Reflex Living Solutions. All rights reserved.
-            </div>
+            <nav aria-label="Footer">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Reflex</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="our-homes.html">Our Homes</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">&copy; 2026 Reflex Living Solutions. All rights reserved.</div>
         </div>
     </footer>
 </body>
