@@ -5,27 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reflex Living Solutions | Properties for Supported Living</title>
     <meta name="description" content="Reflex Living Solutions provides properties for supported living, working with care providers to help people find a home that suits their needs.">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico?v=reflex4">
-    <link rel="icon" type="image/png" sizes="64x64" href="images/logo_reflex-favicon.png?v=reflex4">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="images/logo_reflex.svg?v=reflex4">
-    <link rel="stylesheet" href="styles.css?v=20261007-icons">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="images/logo_reflex.svg?v=3">
+    <link rel="stylesheet" href="styles.css?v=20261007-homes">
+    <script src="navigation.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar__contact">
-                <a href="tel:***INSERT PHONE NUMBER***">Phone: ***INSERT PHONE NUMBER***</a>
-                <span>Supported Housing Enquiries</span>
-            </div>
-            <div class="top-bar__address">
-                ***INSERT EMAIL ADDRESS***
-            </div>
-        </div>
-    </div>
-
-    <header class="site-header">
+<header class="site-header">
         <div class="container">
             <div class="brand">
                 <img class="brand__logo" src="images/logo_reflex.svg" alt="" width="44" height="44">
@@ -40,11 +27,13 @@
             </a>
         </div>
         <nav class="main-nav" aria-label="Primary">
-                <ul>
-                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-                </ul>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links" hidden>Menu</button>
+            <ul id="primary-links">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Reflex</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -56,7 +45,7 @@
                     <p>Reflex Living Solutions provides properties for supported living. We focus on the home, working with care providers so people can live in accommodation that suits their needs. Care and day-to-day support are delivered by separate care providers.</p>
                     <div class="hero__actions">
                         <a href="contact.html" class="btn btn-primary">Discuss Your Housing Needs</a>
-                        <a href="about.html" class="btn btn-outline">Learn About Us</a>
+                        <a href="our-homes.html" class="btn btn-outline">Explore Our Homes</a>
                     </div>
                 </div>
                 <div class="hero__panel">
@@ -72,103 +61,24 @@
             </div>
         </section>
 
-        <section class="stats">
-            <div class="container">
-                <div class="grid">
-                    <div>
-                        <span class="stat__number">Homes</span>
-                        <span class="stat__label">For Supported Living</span>
-                    </div>
-                    <div>
-                        <span class="stat__number">Choice</span>
-                        <span class="stat__label">Individual Housing Needs</span>
-                    </div>
-                    <div>
-                        <span class="stat__number">People</span>
-                        <span class="stat__label">At the Heart of Our Approach</span>
-                    </div>
-                    <div>
-                        <span class="stat__number">Partners</span>
-                        <span class="stat__label">Working Together</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
+        <section class="section" aria-labelledby="home-housing-offer">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">Our Services</span>
-                    <h2>Properties That Support Independent Living</h2>
+                    <span class="eyebrow">What we do</span>
+                    <h2 id="home-housing-offer">Properties That Support Independent Living</h2>
                     <p>The right home is an important part of supported living. Our role is to provide accommodation and work with the people and organisations involved in each housing enquiry.</p>
-                </div>
-                <div class="grid grid-3">
-                    <div class="card">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>
-                        </div>
-                        <h3>Supported Living Properties</h3>
-                        <p>Accommodation for people who need support to live independently, with care arranged separately from their housing.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2m1-10 2 2 4-4"/></svg>
-                        </div>
-                        <h3>Individual Housing Needs</h3>
-                        <p>We discuss property requirements with tenants, families and care providers to understand what makes a suitable home.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="8" cy="7" r="3"/><path d="M2 21v-2a6 6 0 0 1 12 0v2m2-17a3 3 0 0 1 0 6m2 3a6 6 0 0 1 4 6v2"/></svg>
-                        </div>
-                        <h3>Care Provider Partnerships</h3>
-                        <p>We work alongside care and support providers, keeping responsibility for accommodation distinct from the delivery of care.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20.5 5.5a5 5 0 0 0-7 0L12 7l-1.5-1.5a5 5 0 0 0-7 7L12 21l8.5-8.5a5 5 0 0 0 0-7Z"/></svg>
-                        </div>
-                        <h3>Comfort &amp; Privacy</h3>
-                        <p>A home should offer personal space, comfort and a sense of belonging. These priorities guide our approach to housing.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <h3>Property Requirements</h3>
-                        <p>Talk to us about location, layout and accessibility requirements so we can explore appropriate accommodation.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-                        </div>
-                        <h3>Housing Enquiries</h3>
-                        <p>Whether you are exploring a home for yourself, a family member or someone you support, our team can discuss the next steps.</p>
-                    </div>
+                    <a href="what-we-do.html" class="btn btn-primary">Explore What We Do</a>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt">
+        <section class="section section-alt" aria-labelledby="home-approach">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">Our Promise</span>
-                    <h2>A Clear Role. A Shared Commitment.</h2>
+                    <span class="eyebrow">About Reflex</span>
+                    <h2 id="home-approach">A Clear Role. A Shared Commitment.</h2>
                     <p>We focus on providing supported living properties, with respect for the people who call them home.</p>
-                </div>
-                <div class="grid grid-3">
-                    <div class="card">
-                        <h3>Housing Focus</h3>
-                        <p>Our role centres on accommodation. Personal care, medication and day-to-day support remain the responsibility of separate care providers.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Transparent Communication</h3>
-                        <p>We aim to make housing discussions straightforward, involving tenants, families and care providers where appropriate.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Independence &amp; Choice</h3>
-                        <p>We believe people should have a say in where and how they live, with housing that respects their preferences and independence.</p>
-                    </div>
+                    <a href="about.html" class="btn btn-accent">Our Values and Approach</a>
                 </div>
             </div>
         </section>
@@ -182,42 +92,22 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer footer-compact">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>Reflex Living Solutions</h4>
-                    <p>Providing properties for supported living, with independence at the heart of our approach.</p>
-                </div>
-                <div>
-                    <h4>Navigate</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Supported Living Properties</li>
-                        <li>Housing Enquiries</li>
-                        <li>Property Requirements</li>
-                        <li>Care Provider Partnerships</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>***INSERT ADDRESS***</li>
-                        <li><a href="tel:***INSERT PHONE NUMBER***">***INSERT PHONE NUMBER***</a></li>
-                        <li><a href="mailto:***INSERT EMAIL ADDRESS***">***INSERT EMAIL ADDRESS***</a></li>
-                    </ul>
-                </div>
+            <div class="footer-summary">
+                <p><strong>Reflex Living Solutions</strong><br>Properties for supported living.</p>
+                <a href="contact.html" class="btn btn-accent">Contact Us</a>
             </div>
-            <div class="footer-bottom">
-                &copy; 2026 Reflex Living Solutions. All rights reserved.
-            </div>
+            <nav aria-label="Footer">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Reflex</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="our-homes.html">Our Homes</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">&copy; 2026 Reflex Living Solutions. All rights reserved.</div>
         </div>
     </footer>
 </body>
