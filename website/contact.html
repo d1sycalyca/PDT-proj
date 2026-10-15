@@ -6,7 +6,7 @@
     <title>Contact Us | Reflex Living Solutions</title>
     <meta name="description" content="Contact Reflex Living Solutions to discuss supported living properties, housing requirements or care provider partnerships.">
     <link rel="icon" type="image/svg+xml" sizes="any" href="images/logo_reflex.svg?v=3">
-    <link rel="stylesheet" href="styles.css?v=20261007-homes">
+    <link rel="stylesheet" href="styles.css?v=20261015-photos">
     <script src="navigation.js" defer></script>
 </head>
 <body>
@@ -97,7 +97,7 @@
 
                     <div class="form-card">
                         <h2>Send Us a Message</h2>
-                        <form action="#" method="post">
+                        <form id="contact-form" action="mailto:tndto1mil@gmail.com" method="post" enctype="text/plain">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="first-name">First Name</label>
@@ -131,8 +131,15 @@
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                            <p class="form-note">This is a demo form and does not currently submit anywhere. Connect it to a form handler or backend to receive submissions.</p>
+                            <button type="submit" class="btn btn-primary">Open Email Draft</button>
+                            <p class="form-note">This opens your email app with your enquiry filled in. Review the draft and press Send in your email app. You can also email <a href="mailto:tndto1mil@gmail.com">tndto1mil@gmail.com</a> directly.</p>
+                            <div id="email-draft-options" hidden>
+                                <p class="form-note">You can also copy your draft into any email service:</p>
+                                <div class="form-group">
+                                    <label for="email-draft-copy">Email draft — select and copy</label>
+                                    <textarea id="email-draft-copy" rows="8" readonly></textarea>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -158,5 +165,6 @@
             <div class="footer-bottom">&copy; 2026 Reflex Living Solutions. All rights reserved.</div>
         </div>
     </footer>
+    <script src="contact.js?v=3"></script>
 </body>
 </html>
