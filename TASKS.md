@@ -9,7 +9,7 @@ This is the working task list for Dwayne and Tomiwa. It is ordered by dependency
 - **B — Both:** decisions and reviews that need two sets of eyes.
 - **C — Client:** facts, assets, approvals, and final acceptance.
 
-To reduce merge conflicts, Dwayne owns `styles.css` and the shared header/footer until the page template is stable. Tomiwa can prepare page copy and outlines in separate Markdown files during that work, then build pages from the agreed template.
+To reduce merge conflicts, Dwayne owns `website/assets/css/styles.css` and the shared header/footer until the page template is stable. Tomiwa can prepare page copy and outlines in separate Markdown files during that work, then build pages from the agreed template.
 
 ## Definition of done
 
@@ -57,7 +57,7 @@ The site is ready to launch when:
 - [ ] **D:** Convert the existing header to Reflex branding with the real logo, contact details, and agreed navigation.
 - [ ] **D:** Build an accessible mobile navigation with a visible menu control, keyboard operation, focus handling, and a usable no-JavaScript fallback.
 - [ ] **D:** Create the shared footer with useful navigation, contact details, company information, privacy links, and copyright.
-- [ ] **D:** Finish the reusable colour, typography, spacing, button, card, form, grid, and section styles in `styles.css`.
+- [ ] **D:** Finish the reusable colour, typography, spacing, button, card, form, grid, and section styles in `website/assets/css/styles.css`.
 - [ ] **D:** Build the proposed homepage structure: photographic hero, two audience paths, What We Do, Our Approach, Living With Reflex shortcuts, CTA, and footer.
 - [ ] **D:** Replace the current care-home hero placeholder with an approved supported-living image when supplied.
 - [ ] **D:** Make the homepage work at narrow mobile, large mobile, tablet, laptop, and wide desktop sizes without horizontal scrolling.
