@@ -35,3 +35,9 @@ Selected 16 October 2026.
 - `what-we-do-living-room.jpg` — Rachel Claire, Pexels photo 8112348: https://www.pexels.com/photo/cosy-boho-style-interior-design-8112348/
   Licence: https://www.pexels.com/license/
   Download: https://images.pexels.com/photos/8112348/pexels-photo-8112348.jpeg?auto=compress&cs=tinysrgb&w=1200
+- `our-homes-exterior.jpg` — Daniel Wells, Pexels photo 36774943: https://www.pexels.com/photo/charming-brick-houses-on-a-sunny-british-street-36774943/
+  Licence: https://www.pexels.com/license/
+  Download: https://images.pexels.com/photos/36774943/pexels-photo-36774943.png?auto=compress&cs=tinysrgb&w=1000&fm=jpg
+- `our-homes-interior.jpg` — Peter Vang, Pexels photo 35896210: https://www.pexels.com/photo/modern-open-plan-kitchen-and-living-room-interior-35896210/
+  Licence: https://www.pexels.com/license/
+  Download: https://images.pexels.com/photos/35896210/pexels-photo-35896210.jpeg?auto=compress&cs=tinysrgb&w=1200
