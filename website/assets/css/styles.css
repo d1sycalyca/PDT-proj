@@ -489,40 +489,20 @@ display: inline-flex;
   text-decoration: none;
 }
 
-.btn-primary {
-background-color: var(--color-accent);
-  border-color: var(--color-primary-dark);
-  color: var(--color-heading);
+.btn-primary,
+.btn-outline,
+.btn-accent {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #000000;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-outline:hover,
+.btn-accent:hover {
   background-color: var(--color-button-hover);
   border-color: var(--color-button-hover);
-  color: var(--color-text-inverse);
-}
-
-.btn-outline {
-background-color: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-}
-
-.btn-outline:hover {
-background-color: var(--color-button-hover);
-  border-color: var(--color-button-hover);
-  color: var(--color-text-inverse);
-}
-
-.btn-accent {
-background-color: var(--color-accent);
-  border-color: var(--color-primary-dark);
-  color: var(--color-heading);
-}
-
-.btn-accent:hover {
-background-color: var(--color-button-hover);
-  border-color: var(--color-button-hover);
-  color: var(--color-text-inverse);
+  color: #000000;
 }
 
 /* ---------- Hero ---------- */
@@ -556,11 +536,6 @@ background-color: var(--color-button-hover);
   color: var(--color-text-inverse);
   margin-bottom: 28px;
   max-width: 46ch;
-}
-
-.hero .btn-outline {
-  color: var(--color-text-inverse);
-  border-color: var(--color-text-inverse);
 }
 
 .hero__actions {
@@ -738,18 +713,6 @@ color: var(--color-heading);
 .cta-banner p {
   color: var(--color-heading);
   margin-bottom: 24px;
-}
-
-.cta-banner .btn-accent {
-  background-color: var(--color-header-bg);
-  border-color: var(--color-header-bg);
-  color: var(--color-text-inverse);
-}
-
-.cta-banner .btn-accent:hover {
-  background-color: var(--color-surface);
-  border-color: var(--color-surface);
-  color: var(--color-heading);
 }
 
 /* ---------- About page specifics ---------- */
@@ -938,6 +901,10 @@ background-color: var(--color-header-bg);
 .site-footer a {
   color: var(--color-text-inverse);
   font-size: 0.92rem;
+}
+
+.site-footer a.btn {
+  color: #000000;
 }
 
 .footer-bottom {

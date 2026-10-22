@@ -1,23 +1,44 @@
 const contactForm = document.getElementById('contact-form');
+const submitButton = contactForm.querySelector('button[type="submit"]');
+const formStatus = document.getElementById('form-status');
+let sending = false;
 
-contactForm.addEventListener('submit', (event) => {
+contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  if (!contactForm.reportValidity()) return;
+  if (sending || !contactForm.reportValidity()) return;
 
   const fields = new FormData(contactForm);
+  if (fields.get('_honey')) return;
   const reason = contactForm.elements.reason.selectedOptions[0].textContent;
-  const body = [
-    `Name: ${fields.get('first-name').trim()} ${fields.get('last-name').trim()}`,
-    `Email: ${fields.get('email').trim()}`,
-    `Phone: ${fields.get('phone').trim() || 'Not provided'}`,
-    `Reason for enquiry: ${reason}`,
-    '',
-    fields.get('message').trim(),
-  ].join('\r\n');
+  fields.set('reason', reason);
+  fields.set('_subject', `Reflex Living Solutions — ${reason}`);
 
-  const subject = `Reflex Living Solutions — ${reason}`;
-  const recipient = contactForm.action.replace(/^mailto:/i, '');
-  document.getElementById('email-draft-copy').value = `To: ${recipient}\r\nSubject: ${subject}\r\n\r\n${body}`;
-  document.getElementById('email-draft-options').hidden = false;
-  window.location.href = `${contactForm.action}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  sending = true;
+  submitButton.disabled = true;
+  submitButton.textContent = 'Sending…';
+  contactForm.setAttribute('aria-busy', 'true');
+  formStatus.textContent = 'Sending your message…';
+
+  try {
+    const endpoint = new URL(contactForm.action);
+    endpoint.pathname = `/ajax${endpoint.pathname}`;
+    const response = await fetch(endpoint.href, {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: fields,
+    });
+    const result = await response.json();
+    if (!response.ok || (result.success !== true && result.success !== 'true')) {
+      throw new Error('Submission failed');
+    }
+    contactForm.reset();
+    formStatus.textContent = 'Thank you! Your message has been submitted. Our team will be in touch.';
+  } catch {
+    formStatus.textContent = 'We couldn’t confirm your submission. Your message is still here. Please try again or email tndto1mil@gmail.com directly.';
+  } finally {
+    sending = false;
+    submitButton.disabled = false;
+    submitButton.textContent = 'Send Message';
+    contactForm.removeAttribute('aria-busy');
+  }
 });
